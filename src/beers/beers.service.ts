@@ -64,7 +64,6 @@ export class BeersService {
     }
 
     remove(id: string) : Beer [] {
-        let index = this.beers.findIndex(beer => beer.id === id)
         this.beers = this.beers.filter(beer => beer.id != id);
         return this.beers;
     }
